@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#5dd180"
+        android:padding="0dp">
+        <ImageButton
+            android:layout_margin="0dp"
+            android:id="@+id/back_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back"
+            android:actionViewClass="android.widget.SearchView"
+            >
+        </ImageButton>
+
+        <EditText
+            android:id="@+id/search_content"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:hint="搜索"
+            >
+
+        </EditText>
+
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/search_result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
